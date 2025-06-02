@@ -34,26 +34,26 @@ export default function NavBar() {
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
-            About Me!
+            About Us!
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon
-            url="https://twitter.com/kapehe_ok"
+            url=""
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://youtube.com/c/kapehe"
+            url=""
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://linkedin.com/in/kapehe"
+            url=""
             className="mr-4"
             target="_blank"
             fgColor="#fff"
