@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center text-center bg-gradient-to-br from-green-700 to-teal-500 text-white px-6 py-20 lg:py-32">
+      <section className="relative flex flex-col items-center justify-center text-center bg-gradient-to-br from-white-700 to-teal-500 text-black px-6 py-20 lg:py-32">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-3xl">
-          Where Academic Brilliance Meets Strategic Content &amp; Digital Authority.
+          Where Academic Brilliance Meets Strategic Content & Digital Authority.
         </h1>
         <p className="mt-6 text-lg sm:text-xl md:text-2xl max-w-2xl">
-          Helping students, professionals &amp; brands achieve excellence through plagiarism-free academic writing, SEO-driven content, &amp; virtual brand strategy.
+          Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <button className="bg-yellow-300 hover:bg-yellow-400 text-green-800 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200">
@@ -24,45 +24,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Visuals Section (Text-Based) */}
-      <section className="py-16 px-6 lg:px-32">
-        <div className="max-w-4xl mx-auto space-y-12">
-          {/* Animated Explainer Placeholder */}
-          <div className="relative w-full aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg">
-            {/* Replace with actual <video> or embed */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-gray-500 italic">
-                90-sec Animated Explainer Placeholder
-              </span>
-            </div>
-          </div>
 
-          {/* Text-Based “Screenshots” Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-start">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">
-                LinkedIn Growth Insights
-              </h3>
-              <p className="text-gray-600">
-                Step-by-step strategies that elevated our clients’ LinkedIn following by 150%.
-              </p>
+      {/* About Section */}
+      <section className="bg-blue-700 py-16 px-6 lg:px-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column: Text Content */}
+          <div>
+            <h2 className="text-5xl font-bold uppercase text-white mb-6">About</h2>
+            <p className="text-white text-lg leading-relaxed">
+              CleanWriters Arena was born from a singular belief that every{" "}
+              <span className="font-bold">story, every thesis, and every brand voice deserves to resonate with authenticity, precision, and passion</span>. We create unique, memorable identities that resonate with your audience and set your brand apart.
+            </p>
+            <p className="text-white text-lg leading-relaxed mt-4">
+              Our mission is to transform your vision into reality with innovative, impactful solutions. From logos to websites and marketing design, we strategically position your brand for success, ensuring a cohesive and memorable identity that resonates with your audience.
+            </p>
+            <button className="mt-8 bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
+              Visit our studio
+            </button>
+          </div>
+          {/* Right Column: Video Embed */}
+          <div>
+            <div className="relative w-full pb-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-lg shadow-lg border-2 border-black"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="INTRODUCING AD STUDIO PART 01"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-start">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">
-                SEO Rankings Performance
-              </h3>
-              <p className="text-gray-600">
-                Detailed keyword analysis and on-page optimizations leading to top-3 Google rankings.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-start">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">
-                Writing Dashboard Overview
-              </h3>
-              <p className="text-gray-600">
-                Our intuitive dashboard tracks each project’s progress, deadlines, and quality metrics.
-              </p>
-            </div>
+            <p className="text-white mt-4">Artistic Den was born</p>
+            <a
+              href="https://www.youtube.com/watch?v=VIDEO_ID"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline mt-2 inline-block"
+            >
+              Watch on YouTube
+            </a>
           </div>
         </div>
       </section>
@@ -73,7 +73,6 @@ export default function Home() {
           <p className="text-xl font-semibold text-gray-800">
             Trusted by <span className="text-green-600">700+</span> Clients in <span className="text-green-600">10</span> Countries
           </p>
-
           {/* Testimonials Carousel */}
           <div className="mt-8 relative">
             <div className="overflow-x-auto no-scrollbar flex space-x-6 py-4">
@@ -123,7 +122,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* Carousel Indicators */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
               <span className="w-3 h-3 bg-green-600 rounded-full"></span>
@@ -133,6 +131,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating Chat Icon */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <button className="bg-[#2E5BFF] rounded-full p-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="white"
+            className="w-6 h-6"
+          >
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+          </svg>
+        </button>
+      </div>
     </main>
   );
 }
