@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 export default function Home() {
@@ -21,13 +22,12 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* About Section */}
       <section className="bg-blue-700 py-16 px-6 lg:px-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column: Text Content */}
           <div>
-            <h2 className="text-5xl font-bold uppercase text-white mb-6">About</h2>
+            <h2 className="text-5xl font-bold uppercase text-white mb-6 text-center">About</h2>
             <p className="text-white text-lg leading-relaxed">
               CleanWriters Arena was born from a singular belief that every{" "}
               <span className="font-bold">story, every thesis, and every brand voice deserves to resonate with authenticity, precision, and passion</span>. We create unique, memorable identities that resonate with your audience and set your brand apart.
@@ -59,6 +59,119 @@ export default function Home() {
             >
               Watch on YouTube
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Our Featured Work Section */}
+      <section className="bg-white py-16 px-6 lg:px-32">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Explore Our Featured Work</h2>
+          <div className="flex justify-center space-x-6 mb-12">
+            <a className="text-gray-600 font-semibold hover:text-gray-900">
+              ALL PROJECTS
+            </a>
+            <a className="text-gray-600 font-semibold hover:text-gray-900">
+              BRAND DESIGN
+            </a>
+            <a className="text-gray-600 font-semibold hover:text-gray-900">
+              MARKETING DESIGN
+            </a>
+            <a className="text-gray-600 font-semibold hover:text-gray-900">
+              WEB DESIGN
+            </a>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-0">
+            {/* Project 1 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/writing.jpg"
+                  alt="Project 1"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  Branding for Madison Architects, featuring a cohesive identity across digital and print media.
+                </p>
+              </div>
+            </div>
+            {/* Project 2 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/branding.jpg"
+                  alt="Project 2"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  Marketing campaign for Madison Architects, showcasing their innovative architectural solutions through impactful outdoor advertising.
+                </p>
+              </div>
+            </div>
+            {/* Project 3 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/seo.jpg"
+                  alt="Project 3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  Web design for Madison Architects, creating a user-friendly and visually appealing online presence.
+                </p>
+              </div>
+            </div>
+            {/* Project 4 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/blog.jpg"
+                  alt="Logo Design for Tech Startup"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  Custom logo design for a tech startup, creating a modern and innovative brand identity.
+                </p>
+              </div>
+            </div>
+            {/* Project 5 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/port.jpg"
+                  alt="Social Media Campaign for Fashion Brand"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  Engaging social media campaign for a fashion brand, increasing brand awareness and customer engagement.
+                </p>
+              </div>
+            </div>
+            {/* Project 6 */}
+            <div className="relative group h-80">
+              <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
+                <img
+                  src="/seo.jpg"
+                  alt="Mobile App Design for Fitness Company"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-none">
+                <p className="text-white text-center">
+                  User-friendly mobile app design for a fitness company, helping users track their workouts and progress.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
