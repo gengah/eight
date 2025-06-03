@@ -54,7 +54,6 @@ export default function Home() {
                 allowFullScreen
               ></iframe>
             </div>
-            <p className="text-white mt-4">Artistic Den was born</p>
             <a
               href="https://www.youtube.com/watch?v=VIDEO_ID"
               target="_blank"
