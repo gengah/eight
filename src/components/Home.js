@@ -18,9 +18,6 @@ export default function Home() {
           <button className="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200">
             Get a Custom Writing Quote
           </button>
-          <button className="bg-white hover:bg-gray-100 text-green-700 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200">
-            Download Our Content Blueprint
-          </button>
         </div>
       </section>
 
