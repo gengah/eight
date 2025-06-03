@@ -36,7 +36,7 @@ export default function Home() {
               Our mission is to transform your vision into reality with innovative, impactful solutions. From logos to websites and marketing design, we strategically position your brand for success, ensuring a cohesive and memorable identity that resonates with your audience.
             </p>
             <button className="mt-8 bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
-              Visit our studio
+              Visit Us
             </button>
           </div>
           {/* Right Column: Video Embed */}
