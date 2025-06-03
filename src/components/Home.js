@@ -44,7 +44,7 @@ export default function Home() {
             <div className="relative w-full pb-[56.25%]">
               <iframe
                 className="absolute inset-0 w-full h-full rounded-lg shadow-lg border-2 border-black"
-                src="https://www.youtube.com/embed/VIDEO_ID"
+                src="https://www.youtube.com/watch?v=3NiO7N3iVaw" 
                 title="INTRODUCING AD STUDIO PART 01"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -68,17 +68,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-8">Explore Our Featured Work</h2>
           <div className="flex justify-center space-x-6 mb-12">
-            <a className="text-gray-600 font-semibold hover:text-gray-900">
-              ALL PROJECTS
+            
+            <a className="text-gray-600 font-small hover:text-gray-900">
+              ACADEMIC WRITING
             </a>
-            <a className="text-gray-600 font-semibold hover:text-gray-900">
-              BRAND DESIGN
+            <a className="text-gray-600 font-small hover:text-gray-900">
+             SEO OPTIMIZATION
             </a>
-            <a className="text-gray-600 font-semibold hover:text-gray-900">
-              MARKETING DESIGN
-            </a>
-            <a className="text-gray-600 font-semibold hover:text-gray-900">
-              WEB DESIGN
+            <a className="text-gray-600 font-small hover:text-gray-900">
+             BRANDING
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-0">
