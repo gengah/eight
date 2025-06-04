@@ -22,43 +22,118 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="bg-blue-700 py-16 px-6 lg:px-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Text Content */}
-          <div>
-            <h2 className="text-5xl font-bold uppercase text-white mb-6 text-center">About</h2>
-            <p className="text-white text-lg leading-relaxed">
-              CleanWriters Arena was born from a singular belief that every{" "}
-              <span className="font-bold">story, every thesis, and every brand voice deserves to resonate with authenticity, precision, and passion</span>. We create unique, memorable identities that resonate with your audience and set your brand apart.
-            </p>
-            <p className="text-white text-lg leading-relaxed mt-4">
-              Our mission is to transform your vision into reality with innovative, impactful solutions. From logos to websites and marketing design, we strategically position your brand for success, ensuring a cohesive and memorable identity that resonates with your audience.
-            </p>
-            <button className="mt-8 bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
-              Visit Us
-            </button>
-          </div>
-          {/* Right Column: Video Embed */}
-          <div>
-            <div className="relative w-full pb-[56.25%]">
-              <iframe
-                className="absolute inset-0 w-full h-full rounded-lg shadow-lg border-2 border-black"
-                src="https://www.youtube.com/watch?v=3NiO7N3iVaw" 
-                title="INTRODUCING AD STUDIO PART 01"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+      {/* About Us Section */}
+      <section className="relative bg-blue-700 py-16 px-6 lg:px-32 text-white">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('/about-us-bg.jpg')" }}
+        ></div>
+        <div className="relative max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
+          <div className="space-y-12">
+            {/* Introduction */}
+            <div>
+              <p className="text-lg leading-relaxed">
+                We are a team of highly skilled digital marketers, SEO content experts, and academic research professionals dedicated to helping brands grow online while supporting academic excellence. At our core, we blend marketing innovation with intellectual depth to deliver data-driven strategies and content that converts.
+              </p>
+              <p className="text-lg leading-relaxed mt-4">
+                Whether you're a brand looking to increase visibility or a student seeking academic support, CleanWriters Arena is your reliable online writing partner.
+              </p>
             </div>
-            <a
-              href="https://www.youtube.com/watch?v=VIDEO_ID"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white underline mt-2 inline-block"
-            >
-              Watch on YouTube
-            </a>
+
+            {/* Mission */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Mission</h3>
+              <p className="text-lg leading-relaxed">
+                To fuel brands, businesses, and students by providing clean, strategic, and result-oriented services in digital marketing, SEO content creation, brand development, and academic research support  all under one creative roof.
+              </p>
+            </div>
+
+            {/* Vision */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Vision</h3>
+              <p className="text-lg leading-relaxed">
+                To become a global leader in delivering strategic digital solutions and academic writing support, helping businesses scale and students succeed while staying grounded in professionalism, quality, and ethical work practices.
+              </p>
+            </div>
+
+            {/* Who We Are */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Who We Are</h3>
+              <p className="text-lg leading-relaxed">
+                We are a diverse collective of copywriters, SEO strategists, graphic designers, researchers, academic writers, and virtual assistants with one thing in common a relentless commitment to excellence.
+              </p>
+              <p className="text-lg leading-relaxed mt-2">
+                Our unique fusion of digital marketing and academic insight makes us the ideal partner for:
+              </p>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-2">
+                <li>Business owners seeking conversions, leads, and visibility</li>
+                <li>Brands needing consistent content and digital presence</li>
+                <li>Students and researchers seeking professionally structured papers</li>
+              </ul>
+
+            </div>
+
+            {/* What We Do */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">What We Do</h3>
+              <p className="text-lg leading-relaxed">
+                We offer professional services across two key pillars:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">Digital Marketing & Brand Growth</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Social Media Management & Page Setup</li>
+                    <li>Content Creation & Optimization</li>
+                    <li>Copywriting & Sales Funnels</li>
+                    <li>SEO Website Content & Blog Writing</li>
+                    <li>Graphic Design (Logos, Posts, Banners)</li>
+                    <li>Market Research & Lead Generation</li>
+                    <li>Email Marketing</li>
+                    <li>Virtual Assistance & Team Coordination</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">Academic Research & Writing Services</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Essays, Reports, Case Studies</li>
+                    <li>Thesis & Dissertations</li>
+                    <li>Literature Reviews</li>
+                    <li>Research Proposals</li>
+                    <li>Editing & Proofreading</li>
+                  </ul>
+                  <p className="text-lg mt-2">
+                    All customized, plagiarism-free, and backed by academic integrity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* How We Do It */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">How We Do It</h3>
+              <ul className="list-disc list-inside space-y-2">
+                <li><strong>Research-Driven Strategies</strong> – We don’t guess. Every project starts with deep market and keyword research.</li>
+                <li><strong>Personalized Client Service</strong> – We listen, understand your goals, and tailor each project to deliver real impact.</li>
+                <li><strong>Team Collaboration Tools</strong> – For seamless client and team collaboration.</li>
+                <li><strong>Conversion-Focused Content</strong> – Whether it's SEO or social media copy, we write with purpose: to convert.</li>
+                <li><strong>Academic Precision</strong> – Our academic content is thoroughly researched, clearly structured, and reference-backed.</li>
+              </ul>
+            </div>
+
+            {/* Why Us */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Why Us?</h3>
+              <ul className="list-disc list-inside space-y-2">
+                <li>All-in-One Professional Agency – Get marketing, branding, SEO, and academic support under one umbrella.</li>
+                <li>Clean Content, Ethical Delivery – No fluff. No bots. Just real, human-written content tailored to your audience.</li>
+                <li>Global Experience, Local Excellence – We've served brands, businesses, and students across the globe.</li>
+                <li>Proven Track Record – High client retention, real reviews, and work that speaks for itself.</li>
+                <li>Fast Turnaround + Transparent Pricing – Get quick delivery with no hidden charges.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -68,16 +143,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-8">Explore Our Featured Work</h2>
           <div className="flex justify-center space-x-6 mb-12">
-            
-            <a className="text-gray-600 font-small hover:text-gray-900">
-              ACADEMIC WRITING
-            </a>
-            <a className="text-gray-600 font-small hover:text-gray-900">
-             SEO OPTIMIZATION
-            </a>
-            <a className="text-gray-600 font-small hover:text-gray-900">
-             BRANDING
-            </a>
+            <a className="text-gray-600 font-small hover:text-gray-900">ACADEMIC WRITING</a>
+            <a className="text-gray-600 font-small hover:text-gray-900">SEO OPTIMIZATION</a>
+            <a className="text-gray-600 font-small hover:text-gray-900">BRANDING</a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-0">
             {/* Project 1 */}
