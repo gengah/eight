@@ -1,5 +1,35 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+
+// Custom HoverDropdown component
+function HoverDropdown({ buttonText, children }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <button className="flex justify-between w-full px-4 py-2 text-left text-xl font-semibold text-blue-700 bg-white border border-blue-300 rounded-lg hover:bg-blue-50 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
+        <span>{buttonText}</span>
+        <ChevronDownIcon
+          className={`w-5 h-5 text-blue-500 transform ${isHovered ? 'rotate-180' : ''}`}
+        />
+      </button>
+      <div
+        className={`mt-2 w-full p-4 bg-white text-gray-800 rounded-lg shadow-md transition-all duration-200 ease-out ${
+          isHovered
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 -translate-y-1 pointer-events-none'
+        }`}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -72,7 +102,6 @@ export default function Home() {
                 <li>Brands needing consistent content and digital presence</li>
                 <li>Students and researchers seeking professionally structured papers</li>
               </ul>
-
             </div>
 
             {/* What We Do */}
@@ -82,8 +111,8 @@ export default function Home() {
                 We offer professional services across two key pillars:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-                <div>
-                  <h4 className="text-xl font-semibold mb-2">Digital Marketing & Brand Growth</h4>
+                {/* Digital Marketing & Brand Growth Dropdown */}
+                <HoverDropdown buttonText="Digital Marketing & Brand Growth">
                   <ul className="list-disc list-inside space-y-2">
                     <li>Social Media Management & Page Setup</li>
                     <li>Content Creation & Optimization</li>
@@ -94,20 +123,21 @@ export default function Home() {
                     <li>Email Marketing</li>
                     <li>Virtual Assistance & Team Coordination</li>
                   </ul>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-2">Academic Research & Writing Services</h4>
+                </HoverDropdown>
+
+                {/* Academic Research & Writing Services Dropdown */}
+                <HoverDropdown buttonText="Academic Research & Writing Services">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Essays, Reports, Case Studies</li>
+                    "Essays, Reports, Case Studies"
                     <li>Thesis & Dissertations</li>
                     <li>Literature Reviews</li>
                     <li>Research Proposals</li>
                     <li>Editing & Proofreading</li>
                   </ul>
-                  <p className="text-lg mt-2">
+                  <p className="text-lg mt-4">
                     All customized, plagiarism-free, and backed by academic integrity.
                   </p>
-                </div>
+                </HoverDropdown>
               </div>
             </div>
 
