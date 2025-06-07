@@ -111,14 +111,7 @@ const About = () => {
         What We Do
       </h2>
 
-      {/* Full-width Branding Image */}
-      <div className="mb-8">
-        <img
-          src="/branding.jpg"
-          alt="Branding Illustration"
-          className="w-full h-64 object-cover rounded-lg shadow-md"
-        />
-      </div>
+     
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Digital Marketing & Brand Growth */}
