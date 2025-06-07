@@ -1,33 +1,31 @@
-import {defineField, defineType} from 'sanity'
-
-export default defineType({
+export default {
   name: 'author',
   title: 'Author',
   type: 'document',
   fields: [
-    defineField({
+    {
       name: 'name',
       title: 'Name',
-      type: 'string',
-    }),
-    defineField({
+      type: 'string'
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
       options: {
         source: 'name',
-        maxLength: 96,
-      },
-    }),
-    defineField({
+        maxLength: 96
+      }
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
+        hotspot: true
+      }
+    },
+    {
       name: 'bio',
       title: 'Bio',
       type: 'array',
@@ -36,15 +34,15 @@ export default defineType({
           title: 'Block',
           type: 'block',
           styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
-    }),
+          lists: []
+        }
+      ]
+    }
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image',
-    },
-  },
-})
+      media: 'image'
+    }
+  }
+}
