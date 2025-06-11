@@ -2,7 +2,7 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '254703101328'; // Replace with your WhatsApp number (no + sign)
+  const phoneNumber = '254727856279'; // Replace with your WhatsApp number (no + sign)
 
   return (
     <a
