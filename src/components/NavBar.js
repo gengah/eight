@@ -21,43 +21,44 @@ export default function NavBar() {
           </NavLink>
 
           {/* Mobile Hamburger Button */}
-          <button
-            className="md:hidden ml-4 focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle Menu"
-          >
-            {menuOpen ? (
-              <svg
-                className="h-8 w-8 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="h-8 w-8 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 8h16M4 16h16"
-                />
-              </svg>
-            )}
-          </button>
+         <button
+  className="md:hidden ml-4 focus:outline-none"
+  onClick={() => setMenuOpen(!menuOpen)}
+  aria-label="Toggle Menu"
+>
+  {menuOpen ? (
+    <svg
+      className={`h-8 w-8 ${menuOpen ? "stroke-blue-600" : "stroke-white md:stroke-black"}`}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  ) : (
+    <svg
+      className={`h-8 w-8 ${menuOpen ? "stroke-blue-600" : "stroke-white md:stroke-black"}`}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M4 8h16M4 16h16"
+      />
+    </svg>
+  )}
+</button>
+
         </div>
 
         {/* Desktop Nav & Social Icons */}
