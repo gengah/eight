@@ -49,12 +49,7 @@ export default function Home() {
           >
             Where Academic Brilliance Meets Strategic Content & Digital Authority.
           </h1>
-          <p
-            className={`mt-6 text-lg sm:text-xl max-w-2xl transition-transform transition-opacity duration-700 delay-200 ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.          </p>
+          
           
           <div
             className={`mt-12 w-full max-w-md transition-transform transition-opacity duration-700 delay-600 ${
@@ -67,6 +62,12 @@ Helping students, professionals & brands achieve excellence through plagiarism-f
               className="w-full h-auto rounded-lg shadow-2xl"
             />
           </div>
+          <p
+            className={`mt-6 text-lg sm:text-xl max-w-2xl transition-transform transition-opacity duration-700 delay-200 ${
+              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.          </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
               href="#"

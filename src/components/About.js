@@ -32,18 +32,13 @@ const About = () => {
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               We are a team of highly skilled digital marketers, SEO content experts, and academic research professionals dedicated to helping brands grow online while supporting academic excellence. At our core, we blend marketing innovation with intellectual depth to deliver data-driven strategies and content that converts.
             </p>
-            <a
-              href="/contact"
-              className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300"
-            >
-              Contact Us
-            </a>
+            
           </div>
 
           {/* Hero Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/seo.jpg"
+              src="/7.jpg"
               alt="SEO & Marketing Illustration"
               className="rounded-lg shadow-lg w-full object-cover"
             />
@@ -117,7 +112,7 @@ const About = () => {
         {/* Digital Marketing & Brand Growth */}
         <div>
           <img
-            src="/blog.jpg"
+            src="/2.jpg"
             alt="Blog & SEO"
             className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
           />
@@ -203,7 +198,7 @@ const About = () => {
         {/* Academic Research & Writing Services */}
         <div>
           <img
-            src="/cons.jpg"
+            src="/4.jpg"
             alt="Consulting & Research"
             className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
           />
