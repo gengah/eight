@@ -5,11 +5,12 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import WhatsAppButton from "./components/WhatsAppButton"; // ✅ import
 
 function App() {
   return (
     <BrowserRouter>
-    <NavBar />
+      <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -17,6 +18,7 @@ function App() {
         <Route path='/post' element={<Post />} />
         <Route path='/project' element={<Project />} />
       </Routes>
+      <WhatsAppButton /> {/* ✅ always visible */}
     </BrowserRouter>
   );
 }
