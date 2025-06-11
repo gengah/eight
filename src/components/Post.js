@@ -55,49 +55,52 @@ export default function Post() {
   return (
     <main className="bg-white min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl font-bold flex justify-center mb-4">
+        <h1 className="text-5xl font-bold flex justify-center mb-4 p-5 bg-gray-100">
           Blog Page
         </h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to Our blog posts
-        </h2>
+
         <div className="space-y-12">
           {postData &&
             postData.map((post, index) => (
-              <article key={index} className="max-w-3xl">
-                <Link to={"/post/" + post.slug.current}>
-                  <div className="flex flex-col">
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
-                      className="w-full h-96 object-cover rounded-lg mb-4"
-                    />
-                    <div className="space-y-2">
-                      <h3 className="text-2xl font-bold text-gray-800 hover:text-gray-600">
-                        {post.title}
-                      </h3>
-                      <div className="flex items-center space-x-2 text-sm text-gray-500">
-                        <span>{formatDate(post.publishedAt)}</span>
-                        <span>·</span>
-                        <span>
-                          {post.author ? post.author.name : "Unknown Author"}
-                        </span>
-                      </div>
-                      <p className="text-gray-600">
-                        {truncateText(post.body, 150)}
-                      </p>
-                      <div className="flex items-center space-x-2">
-                        <span className="text-gray-500">🏷️</span>
-                        <span className="text-gray-600">
-                          {post.categories && post.categories[0]
-                            ? post.categories[0].title
-                            : "Uncategorized"}
-                        </span>
+              <React.Fragment key={index}>
+                <article className="max-w-3xl">
+                  <Link to={"/post/" + post.slug.current}>
+                    <div className="flex flex-col group">
+                      <img
+                        src={post.mainImage.asset.url}
+                        alt={post.mainImage.alt}
+                        className="w-full h-96 object-cover  mb-4 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                      />
+                      <div className="space-y-2">
+                        <h3 className="text-2xl font-bold text-gray-800 group-hover:text-gray-600 transition-colors duration-300">
+                          {post.title}
+                        </h3>
+                        <div className="flex items-center space-x-2 text-sm text-gray-500">
+                          <span>{formatDate(post.publishedAt)}</span>
+                          <span>·</span>
+                          <span>
+                            {post.author ? post.author.name : "Unknown Author"}
+                          </span>
+                        </div>
+                        <p className="text-gray-600">
+                          {truncateText(post.body, 150)}
+                        </p>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-gray-500">🏷️</span>
+                          <span className="text-gray-600">
+                            {post.categories && post.categories[0]
+                              ? post.categories[0].title
+                              : "Uncategorized"}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </article>
+                  </Link>
+                </article>
+
+                {/* Line separator between posts */}
+                <hr className="my-8 border-t border-gray-300" />
+              </React.Fragment>
             ))}
         </div>
       </section>

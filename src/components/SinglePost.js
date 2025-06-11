@@ -49,10 +49,9 @@ export default function SinglePost() {
     <main className="bg-white min-h-screen p-10 md:p-12 pt-30">
       <article className="container mx-auto">
         {/* Header Section */}
-        <header>
-         
+        <header className="container mx-auto">
           <div className="bg-gray-100 p-4 md:p-8 text-center">
-            <h1 className="text-2xl md:text-4xl font-bold text-blue-900 uppercase">
+            <h1 className="text-2xl md:text-4xl font-bold text-blue-900 uppercase p-5">
               {singlePost.title}
             </h1>
           </div>
@@ -62,7 +61,7 @@ export default function SinglePost() {
             <img
               src={singlePost.mainImage.asset.url}
               alt={singlePost.title}
-              className="w-full md:w-3/4 object-cover "
+              className="w-full md:w-3/4 object-cover"
               style={{ height: "400px" }}
             />
           </div>
@@ -77,26 +76,22 @@ export default function SinglePost() {
                 {publishedDate}
               </span>
               <span>{singlePost.name}</span>
-              <span className="flex items-center">
-                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 7h10M7 11h10M7 15h10"></path>
-                </svg>
-                Brand Identity Design
-              </span>
             </div>
           </div>
         </header>
 
         {/* Main Content */}
-       <div className="px-4 md:px-16 lg:px-48 py-8 md:py-12 text-gray-800 text-left">
-  <BlockContent
-    blocks={singlePost.body}
-    projectId="31mci3g2"
-    dataset="production"
-    serializers={{}}
-  />
-</div>
+     <div className="custom-prose px-4 md:px-16 lg:px-48 py-8 md:py-12 prose prose-lg max-w-none text-gray-800">
 
+
+ 
+  <BlockContent
+            blocks={singlePost.body}
+            projectId="31mci3g2"
+            dataset="production"
+            serializers={{}}
+          />
+        </div>
       </article>
 
       {/* Chat/Support Button */}
