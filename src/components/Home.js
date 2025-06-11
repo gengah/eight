@@ -239,17 +239,17 @@ Our Mission is To fuel brands, businesses, and students by providing clean, stra
           {/* Achievements */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center hover:bg-blue-50 transition-colors">
-              <ClockIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <ClockIcon className="w-13 h-12 text-blue-700 mb-2" />
               <h3 className="text-2xl font-bold text-blue-700">10+ Years</h3>
               <p>of experience in delivering excellence</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center hover:bg-blue-50 transition-colors">
-              <UserGroupIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <UserGroupIcon className="w-12 h-12 text-blue-700 mb-2" />
               <h3 className="text-2xl font-bold text-blue-700">700+ Clients</h3>
               <p>served across the globe</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center hover:bg-blue-50 transition-colors">
-              <GlobeAltIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <GlobeAltIcon className="w-13 h-12 text-blue-700 mb-2" />
               <h3 className="text-2xl font-bold text-blue-700">10 Countries</h3>
               <p>with satisfied clients</p>
             </div>
