@@ -6,7 +6,7 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-blue-700">
+    <header className="fixed w-full top-0 z-50 bg-white">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Brand & Hamburger */}
         <div className="flex items-center justify-between w-full md:w-auto">
@@ -14,8 +14,8 @@ export default function NavBar() {
           <NavLink
             to="/"
             exact
-            activeClassName="text-white"
-            className="inflex-flex items-center text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+            activeClassName="text-black"
+            className="inflex-flex items-center text-black hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
             CleanWriters
           </NavLink>
@@ -64,21 +64,15 @@ export default function NavBar() {
         <nav className="hidden md:flex md:items-center md:space-x-6">
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 rounded text-black hover:text-black"
+            activeClassName="text-black bg-red-700"
           >
             Blog Posts
           </NavLink>
-          <NavLink
-            to="/project"
-            className="inline-flex items-center py-3 px-3 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
-          >
-            Projects
-          </NavLink>
+        
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-3 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-3 rounded text-black hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
             About Us!
@@ -87,19 +81,19 @@ export default function NavBar() {
 
         <div className="hidden md:inline-flex md:items-center md:space-x-4">
           <SocialIcon
-            url="https://twitter.com/"
+            url="https://x.com/cleanwriter001"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://youtube.com/"
+            url="https://www.pinterest.com/cleanwriters/"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://linkedin.com/"
+            url="www.linkedin.com/in/cleanwriters-arena-80a738237"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
@@ -119,14 +113,7 @@ export default function NavBar() {
             >
               Blog Posts
             </NavLink>
-            <NavLink
-              to="/project"
-              className="block py-2 px-2 rounded text-red-200 hover:text-green-800"
-              activeClassName="text-red-100 bg-red-700"
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </NavLink>
+          
             <NavLink
               to="/about"
               className="block py-2 px-2 rounded text-red-200 hover:text-green-800"

@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import React, { useState, useEffect } from "react";
+import { ChevronDownIcon, ClockIcon, UserGroupIcon, GlobeAltIcon } from '@heroicons/react/20/solid';
 
 // Custom HoverDropdown component
 function HoverDropdown({ buttonText, children }) {
@@ -33,27 +32,61 @@ function HoverDropdown({ buttonText, children }) {
 }
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   return (
     <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center text-center bg-gradient-to-br from-white-700 to-teal-500 text-black px-6 py-20 lg:py-32">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-3xl">
-          Where Academic Brilliance Meets Strategic Content & Digital Authority.
-        </h1>
-        <p className="mt-6 text-lg sm:text-xl md:text-2xl max-w-2xl">
-          Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.
-        </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <button className="bg-yellow-300 hover:bg-yellow-400 text-green-800 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200">
-            Book a Free Strategy Call
-          </button>
-          <button className="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200">
-            Get a Custom Writing Quote
-          </button>
+      <section className="bg-gradient-to-br from-blue-800 to-blue-600 text-white py-24">
+        <div className="max-w-3xl mx-auto px-6 flex flex-col items-center text-center">
+          <h1
+            className={`text-4xl sm:text-5xl md:text-6xl font-bold leading-tight transition-transform transition-opacity duration-700 ${
+              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+            Where Academic Brilliance Meets Strategic Content & Digital Authority.
+          </h1>
+          <p
+            className={`mt-6 text-lg sm:text-xl max-w-2xl transition-transform transition-opacity duration-700 delay-200 ${
+              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.          </p>
+          
+          <div
+            className={`mt-12 w-full max-w-md transition-transform transition-opacity duration-700 delay-600 ${
+              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+            <img
+              src="/1.jpg"
+              alt="Corporate illustration"
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <a
+              href="#"
+              className={`px-6 py-3 text-lg font-medium bg-white text-blue-800 rounded-lg shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-200 transform ${
+                loaded ? 'opacity-100 translate-y-0 delay-400' : 'opacity-0 translate-y-6'
+              }`}
+            >
+              Schedule Your Consultation
+            </a>
+            <a
+              href="#"
+              className={`px-6 py-3 text-lg font-medium border-2 border-white bg-transparent rounded-lg hover:bg-white hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-200 transform ${
+                loaded ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-6'
+              }`}
+            >
+              Request a Custom Proposal
+            </a>
+          </div>
         </div>
       </section>
-
-     
 
       {/* Explore Our Featured Work Section */}
       <section className="bg-white py-16 px-6 lg:px-32">
@@ -159,66 +192,84 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Builders Section */}
-      <section className="bg-white py-16 px-6 lg:px-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xl font-semibold text-gray-800">
-            Trusted by <span className="text-green-600">700+</span> Clients in <span className="text-green-600">10</span> Countries
+      {/* Why Choose Us Section */}
+      <section className="bg-white py-16 px-6 lg:px-60">
+        <div className="max-w-19xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Why Choose Us</h2>
+          <p className="text-xl text-gray-700 mb-12">
+            We are trusted by leading brands and professionals for our expertise in academic writing, SEO, and branding.
           </p>
-          {/* Testimonials Carousel */}
-          <div className="mt-8 relative">
-            <div className="overflow-x-auto no-scrollbar flex space-x-6 py-4">
-              {/* Testimonial 1 */}
-              <div className="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow">
-                <p className="text-gray-700 italic mb-4">
-                  “CleanWriters transformed my academic career! The plagiarism-free papers were top-notch and got me straight A’s.”
-                </p>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center">
-                    <span className="text-green-700 font-bold">JD</span>
-                  </div>
-                  <div>
-                    <p className="text-gray-900 font-semibold">Jane Doe</p>
-                    <p className="text-gray-600 text-sm">Graduate Student, USA</p>
-                  </div>
-                </div>
-              </div>
-              {/* Testimonial 2 */}
-              <div className="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow">
-                <p className="text-gray-700 italic mb-4">
-                  “SEO-driven articles from CleanWriters boosted our website traffic by 200% in just three months!”
-                </p>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center">
-                    <span className="text-green-700 font-bold">MS</span>
-                  </div>
-                  <div>
-                    <p className="text-gray-900 font-semibold">Michael Smith</p>
-                    <p className="text-gray-600 text-sm">Marketing Manager, UK</p>
-                  </div>
-                </div>
-              </div>
-              {/* Testimonial 3 */}
-              <div className="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow">
-                <p className="text-gray-700 italic mb-4">
-                  “Their virtual brand strategy service took our online presence from zero to hero. Highly recommend!”
-                </p>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center">
-                    <span className="text-green-700 font-bold">SL</span>
-                  </div>
-                  <div>
-                    <p className="text-gray-900 font-semibold">Sara Lee</p>
-                    <p className="text-gray-600 text-sm">Startup Founder, Kenya</p>
-                  </div>
+          {/* Achievements */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gray-50 p-6 rounded-lg shadow flex flex-col items-center hover:bg-green-100 transition-colors">
+              <ClockIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <h3 className="text-2xl font-bold text-blue-700">10+ Years</h3>
+              <p className="text-gray-700">of experience in delivering excellence</p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow flex flex-col items-center hover:bg-green-100 transition-colors">
+              <UserGroupIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <h3 className="text-2xl font-bold text-blue-700">700+ Clients</h3>
+              <p className="text-gray-700">served across the globe</p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow flex flex-col items-center hover:bg-green-100 transition-colors">
+              <GlobeAltIcon className="w-13 h-13 text-blue-700 mb-2" />
+              <h3 className="text-2xl font-bold text-blue-700">10 Countries</h3>
+              <p className="text-gray-700">with satisfied clients</p>
+            </div>
+          </div>
+          {/* Expert Team */}
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Meet Our Expert Team</h3>
+            <p className="text-gray-700">
+              Our team consists of highly qualified writers, SEO specialists, and branding experts dedicated to helping you achieve your goals. With a passion for excellence and a commitment to quality, we ensure every project meets the highest standards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What Our Clients Say Section */}
+      <section className="bg-gray-50 py-16 px-6 lg:px-32">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-gray-700 italic mb-4">
+                “CleanWriters transformed my academic career! The plagiarism-free papers were top-notch and got me straight A’s.”
+              </p>
+              <div className="flex items-center space-x-3">
+                <img src="/1.jpg" alt="Jane Doe" className="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <p className="text-gray-900 font-semibold">Jane Doe</p>
+                  <p className="text-gray-600 text-sm">Graduate Student, USA</p>
                 </div>
               </div>
             </div>
-            {/* Carousel Indicators */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              <span className="w-3 h-3 bg-green-600 rounded-full"></span>
-              <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-              <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+            {/* Testimonial 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-gray-700 italic mb-4">
+                “SEO-driven articles from CleanWriters boosted our website traffic by 200% in just three months!”
+              </p>
+              <div className="flex items-center space-x-3">
+                <img src="/2.jpg" alt="Michael Smith" className="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <p className="text-gray-900 font-semibold">Michael Smith</p>
+                  <p className="text-gray-600 text-sm">Marketing Manager, UK</p>
+                </div>
+              </div>
+            </div>
+            {/* Testimonial 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-gray-700 italic mb-4">
+                “Their virtual brand strategy service took our online presence from zero to hero. Highly recommend!”
+              </p>
+              <div className="flex items-center space-x-3">
+                <img src="/3.jpg" alt="Sara Lee" className="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <p className="text-gray-900 font-semibold">Sara Lee</p>
+                  <p className="text-gray-600 text-sm">Startup Founder, Kenya</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -227,12 +278,7 @@ export default function Home() {
       {/* Floating Chat Icon */}
       <div className="fixed bottom-4 right-4 z-50">
         <button className="bg-[#2E5BFF] rounded-full p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="white"
-            className="w-6 h-6"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-6 h-6">
             <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
           </svg>
         </button>
