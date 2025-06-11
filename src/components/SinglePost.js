@@ -49,7 +49,7 @@ export default function SinglePost() {
     <main className="bg-white min-h-screen p-10 md:p-12 pt-30">
       <article className="container mx-auto">
         {/* Header Section */}
-        <header className="container mx-auto">
+        <header className="container mx-auto pt-20">
           <div className="bg-gray-100 p-4 md:p-8 text-center">
             <h1 className="text-2xl md:text-4xl font-bold text-blue-900 uppercase p-5">
               {singlePost.title}
