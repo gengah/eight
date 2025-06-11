@@ -18,7 +18,7 @@ function App() {
         <Route path='/post' element={<Post />} />
         <Route path='/project' element={<Project />} />
       </Routes>
-      <WhatsAppButton /> {/* ✅ always visible */}
+      <WhatsAppButton /> 
     </BrowserRouter>
   );
 }
