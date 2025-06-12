@@ -40,53 +40,48 @@ export default function Home() {
   return (
     <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-white text-black py-24">
-        <div className="max-w-3xl mx-auto px-6 flex flex-col items-center text-center">
-          <h1
-            className={`text-4xl sm:text-5xl md:text-6xl font-bold leading-tight transition-transform transition-opacity duration-700 ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-            Where Academic Brilliance Meets Strategic Content & Digital Authority.
-          </h1>
-          <div
-            className={`mt-12 w-full max-w-md transition-transform transition-opacity duration-700 delay-600 ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-            <img
-              src="/1.jpg"
-              alt="Corporate illustration"
-              className="w-full h-auto rounded-lg shadow-2xl"
-            />
-          </div>
-          <p
-            className={`mt-6 text-lg sm:text-xl max-w-2xl transition-transform transition-opacity duration-700 delay-200 ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-            Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#"
-              className={`px-6 py-3 text-lg font-medium bg-blue-500 text-white rounded-lg shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform ${
-                loaded ? 'opacity-100 translate-y-0 delay-400' : 'opacity-0 translate-y-6'
-              }`}
-            >
-              Schedule Your Consultation
-            </a>
-            <a
-              href="#"
-              className={`px-6 py-3 text-lg font-medium border-2 border-blue-500 bg-transparent text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform ${
-                loaded ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-6'
-              }`}
-            >
-              Request a Custom Proposal
-            </a>
-          </div>
-        </div>
-      </section>
+     <section
+  className="bg-cover bg-center bg-no-repeat text-white py-24 "
+  style={{ backgroundImage: "url('/7.jpg')" }}
+>
+  <div className="bg-white/80 backdrop-blur-sm max-w-3xl mx-auto px-6 flex flex-col items-center text-center rounded-lg shadow-xl">
+    <h1
+      className={`text-4xl sm:text-5xl md:text-4xl font-bold leading-tight transition-transform transition-opacity duration-700 ${
+        loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
+      Where Academic Brilliance Meets Strategic Content & Digital Authority.
+    </h1>
+
+    <p
+      className={`mt-6 text-lg sm:text-xl max-w-2xl transition-transform transition-opacity duration-700 delay-200 ${
+        loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
+      Helping students, professionals & brands achieve excellence through plagiarism-free academic writing, SEO-driven content, & virtual brand strategy.
+    </p>
+
+    <div className="mt-8 flex flex-col sm:flex-row gap-4">
+      <a
+        href="#"
+        className={`px-6 py-3 text-lg font-medium bg-blue-500 text-white rounded-lg shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform ${
+          loaded ? 'opacity-100 translate-y-0 delay-400' : 'opacity-0 translate-y-6'
+        }`}
+      >
+        Schedule Your Consultation
+      </a>
+      <a
+        href="#"
+        className={`px-6 py-3 text-lg font-medium border-2 border-blue-500 bg-transparent text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform ${
+          loaded ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-6'
+        }`}
+      >
+        Request a Custom Proposal
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* About Section */}
       <section className="bg-blue-700 text-white py-16 px-6 lg:px-32">
