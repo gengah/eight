@@ -94,7 +94,7 @@ export default function NavBar() {
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="www.linkedin.com/in/cleanwriters-arena-80a738237"
+            url="https://www.linkedin.com/in/cleanwriters-arena-80a738237"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
