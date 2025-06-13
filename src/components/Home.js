@@ -42,7 +42,7 @@ export default function Home() {
       {/* Hero Section */}
      <section
   className="bg-cover bg-center bg-no-repeat text-white py-24 "
-  style={{ backgroundImage: "url('/7.jpg')" }}
+  style={{ backgroundImage: "url('/logo.jpeg')" }}
 >
   <div className="bg-white/80 backdrop-blur-sm max-w-3xl mx-auto px-6 flex flex-col items-center text-center rounded-lg shadow-xl">
     <h1
