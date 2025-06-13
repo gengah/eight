@@ -82,19 +82,13 @@ export default function NavBar() {
 
         <div className="hidden md:inline-flex md:items-center md:space-x-4">
           <SocialIcon
-            url="https://x.com/cleanwriter001"
+            url="https://x.com/eight8888888838"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://www.pinterest.com/cleanwriters/"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url="https://www.linkedin.com/in/cleanwriters-arena-80a738237"
+            url="https://web.facebook.com/profile.php?id=100069254238757"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
