@@ -120,23 +120,18 @@ export default function NavBar() {
           </nav>
           <div className="mt-4 flex space-x-4">
             <SocialIcon
-              url="https://twitter.com/"
+              url="https://x.com/eight8888888838"
               target="_blank"
               fgColor="#fff"
               style={{ height: 30, width: 30 }}
             />
             <SocialIcon
-              url="https://youtube.com/"
-              target="_blank"
-              fgColor="#fff"
-              style={{ height: 30, width: 30 }}
-            />
-            <SocialIcon
-              url="https://linkedin.com/"
-              target="_blank"
-              fgColor="#fff"
-              style={{ height: 30, width: 30 }}
-            />
+            url="https://web.facebook.com/profile.php?id=100069254238757"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+           
           </div>
         </div>
       )}
