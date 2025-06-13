@@ -22,261 +22,187 @@ const About = () => {
   return (
     <div className="bg-white text-black font-sans pt-24
     ">
-      {/* Hero Section */}
-      <section className="bg-gray-100 py-20 px-6 md:px-20">
-        <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-8">
-          {/* Text Content */}
-          <div className="w-full lg:w-1/2">
-            <h1 className="text-3xl md:text-3xl font-bold mb-6">
-              Digital Marketing, SEO Content & Academic Research
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8">
-              We are a team of highly skilled digital marketers, SEO content experts, and academic research professionals dedicated to helping brands grow online while supporting academic excellence. At our core, we blend marketing innovation with intellectual depth to deliver data-driven strategies and content that converts.
-            </p>
-            
-          </div>
+     {/* Hero Section */}
+<section className="bg-gray-100 py-20 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-8">
+    {/* Text Content */}
+    <div className="w-full lg:w-1/2">
+      <h1 className="text-3xl md:text-3xl font-bold mb-6">
+        Building Brands. Engineering Digital Experiences.
+      </h1>
+      <p className="text-lg md:text-xl text-gray-700 mb-8">
+        We craft intelligent, high-impact digital products  from dynamic websites to powerful mobile apps. Our approach blends deep technical expertise with clear brand strategy to create digital ecosystems that work for the present and scale for the future. If you're serious about growth, we're serious about building it with you  ethically, intelligently, and without the fluff.
+      </p>
+    </div>
 
-          {/* Hero Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src="/7.jpg"
-              alt="SEO & Marketing Illustration"
-              className=" shadow-lg w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-  {/* Mission */}
-      <section className="bg-gray-50 py-16 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-blue-700 p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">Mission</h2>
-            <p className="text-lg leading-relaxed text-white">
-              To fuel brands, businesses, and students by providing clean, strategic, and result-oriented services in digital marketing, SEO content creation, brand development, and academic research support – all under one creative roof.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Hero Image */}
+    <div className="w-full lg:w-1/2">
+      <img
+        src="/7.jpg"
+        alt="Web & App Development Illustration"
+        className="shadow-lg w-full object-cover"
+      />
+    </div>
+  </div>
+</section>
 
-      {/* Vision */}
-      <section className="py-16 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-blue-700 p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">Vision</h2>
-            <p className="text-lg leading-relaxed text-white">
-              To become a global leader in delivering strategic digital solutions and academic writing support, helping businesses scale and students succeed while staying grounded in professionalism, quality, and ethical work practices.
-            </p>
-          </div>
-        </div>
-      </section>
+ {/* Mission */}
+<section className="bg-gray-50 py-16 px-6 md:px-20">
+  <div className="max-w-5xl mx-auto">
+    <div className="bg-green-700 p-8 rounded-lg shadow-md">
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
+        Our Mission
+      </h2>
+      <p className="text-lg leading-relaxed text-white">
+        To empower innovators, entrepreneurs, and scholars with holistic digital solutions—from bespoke web and mobile apps to cohesive brand experiences—backed by AI‑driven insights and rigorous research. We’re committed to delivering clarity, creativity, and measurable impact in every project, ethically and without compromise.
+      </p>
+    </div>
+  </div>
+</section>
 
-      {/* Who We Are */}
-      <section className="bg-gray-50 py-16 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-blue-700 p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">Who We Are</h2>
-            <p className="text-lg leading-relaxed mb-4 text-white">
-              We are a diverse collective of copywriters, SEO strategists, graphic designers, researchers, academic writers, and virtual assistants with one thing in common – a relentless commitment to excellence.
-            </p>
-            <p className="text-lg leading-relaxed mb-4 text-white">
-              Our unique fusion of digital marketing and academic insight makes us the ideal partner for:
-            </p>
-            <ul className="list-none space-y-3 text-white">
-              <li className="flex items-center">
-                <GlobeAltIcon className="h-6 w-6 text-gray-600 mr-3 text-white" />
-                Business owners seeking conversions, leads, and visibility
-              </li>
-              <li className="flex items-center">
-                <GlobeAltIcon className="h-6 w-6 text-gray-600 mr-3 text-white" />
-                Brands needing consistent content and digital presence
-              </li>
-              <li className="flex items-center">
-                <AcademicCapIcon className="h-6 w-6 text-gray-600 mr-3 text-white" />
-                Students and researchers seeking professionally structured papers
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-     {/* What We Do */}
+{/* Vision */}
 <section className="py-16 px-6 md:px-20">
   <div className="max-w-5xl mx-auto">
-    <div className="bg-blue-700 p-8 rounded-lg shadow-md">
+    <div className="bg-green-700 p-8 rounded-lg shadow-md">
       <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
+        Our Vision
+      </h2>
+      <p className="text-lg leading-relaxed text-white">
+        To set a new standard for digital excellence—becoming the trusted partner for businesses and academics worldwide by merging strategic branding, cutting‑edge development, and uncompromising research integrity. We envision a connected future where every idea finds its perfect digital home.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Who We Are */}
+<section className="py-16 px-6 md:px-20 ">
+  <div className="max-w-6xl mx-auto">
+    <div className="bg-white/10 backdrop-blur-md p-8 sm:p-10 rounded-2xl shadow-2xl bg-green-700  space-y-8">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white text-center sm:text-left tracking-tight animate-fade-in-down">
+        Who We Are
+      </h2>
+
+      <div className="space-y-6">
+        <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
+          We are a multidisciplinary team of developers, designers, strategists, and researchers united by one goal: building digital solutions that resonate, perform, and evolve. From pixel-perfect interfaces to data-driven academic insights, we bring depth, discipline, and creativity to every collaboration.
+        </p>
+        <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
+          Our combined expertise makes us the go-to partner for:
+        </p>
+      </div>
+
+      <ul className="list-none space-y-6">
+        <li className="flex items-start group animate-fade-in-up delay-100">
+          <GlobeAltIcon className="h-8 w-8 mr-4 mt-1 text-blue-300 group-hover:text-white transition-colors duration-200 flex-shrink-0" />
+          <div>
+            <strong className="text-lg sm:text-xl text-white">Startups & Scale-ups</strong>
+            <p className="text-gray-200 text-base sm:text-lg">Hungry for a robust web or mobile platform that can grow with them.</p>
+          </div>
+        </li>
+        <li className="flex items-start group animate-fade-in-up delay-200">
+          <ShoppingCartIcon className="h-8 w-8 mr-4 mt-1 text-blue-300 group-hover:text-white transition-colors duration-200 flex-shrink-0" />
+          <div>
+            <strong className="text-lg sm:text-xl text-white">E-Commerce Brands</strong>
+            <p className="text-gray-200 text-base sm:text-lg">Needing seamless integrations, secure transactions, and standout UX.</p>
+          </div>
+        </li>
+        <li className="flex items-start group animate-fade-in-up delay-300">
+          <AcademicCapIcon className="h-8 w-8 mr-4 mt-1 text-blue-300 group-hover:text-white transition-colors duration-200 flex-shrink-0" />
+          <div>
+            <strong className="text-lg sm:text-xl text-white">Researchers & Academics</strong>
+            <p className="text-gray-200 text-base sm:text-lg">Who demand rigorous papers and data analysis that drive meaningful conclusions.</p>
+          </div>
+        </li>
+        <li className="flex items-start group animate-fade-in-up delay-400">
+          <ChartBarIcon className="h-8 w-8 mr-4 mt-1 text-blue-300 group-hover:text-white transition-colors duration-200 flex-shrink-0" />
+          <div>
+            <strong className="text-lg sm:text-xl text-white">Enterprises & NGOs</strong>
+            <p className="text-gray-200 text-base sm:text-lg">Seeking AI-powered analytics, scalable apps, and strategic branding to amplify impact.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{/* What We Do */}
+<section className="py-16 px-6 md:px-20">
+  <div className="max-w-5xl mx-auto">
+    <div className="bg-green-700 p-8 rounded-lg shadow-md space-y-12">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-white">
         What We Do
       </h2>
 
-     
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* Digital Marketing & Brand Growth */}
-        <div>
+        {/* Web & Mobile App Development */}
+        <div className="space-y-6">
           <img
-            src="/2.jpg"
-            alt="Blog & SEO"
-            className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
+            src="/11.jpg"
+            alt="Web & Mobile Development"
+            className="w-full h-64 object-cover rounded-lg shadow-md"
           />
-          <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
-            Digital Marketing & Brand Growth
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            Web & Mobile App Development
           </h3>
-          <ul className="space-y-4">
-            <li className="flex items-start">
-              <GlobeAltIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Social Media Management & Page Setup</strong>
-                <p className="text-gray-200 text-base">
-                  Curate engaging social profiles and manage content calendars that drive interaction.
-                </p>
-              </div>
+          <ul className="list-disc list-inside space-y-4 text-gray-200">
+            <li>
+              <strong>Custom React & Next.js Sites</strong><br />
+              Blazing‑fast, SEO‑friendly websites built to scale.
             </li>
-            <li className="flex items-start">
-              <PencilIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Content Creation & Optimization</strong>
-                <p className="text-gray-200 text-base">
-                  Produce high-quality copy and optimize it for search engines and conversions.
-                </p>
-              </div>
+            <li>
+              <strong>Cross‑Platform Mobile Apps</strong><br />
+              React Native solutions that feel truly native on iOS and Android.
             </li>
-            <li className="flex items-start">
-              <ShoppingCartIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Copywriting & Sales Funnels</strong>
-                <p className="text-gray-200 text-base">
-                  Create compelling sales copy and funnels that guide prospects to purchase.
-                </p>
-              </div>
+            <li>
+              <strong>API & Backend Engineering</strong><br />
+              Secure REST/GraphQL APIs, real‑time data, and serverless architecture.
             </li>
-            <li className="flex items-start">
-              <MagnifyingGlassIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">SEO Website Content & Blog Writing</strong>
-                <p className="text-gray-200 text-base">
-                  Craft keyword-rich articles and blog posts that rank and engage readers.
-                </p>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <CameraIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Graphic Design (Logos, Posts, Banners)</strong>
-                <p className="text-gray-200 text-base">
-                  Design eye-catching visuals to reinforce your brand identity.
-                </p>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <ChartBarIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Market Research & Lead Generation</strong>
-                <p className="text-gray-200 text-base">
-                  Perform data-driven research to identify opportunities and generate leads.
-                </p>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <EnvelopeIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Email Marketing</strong>
-                <p className="text-gray-200 text-base">
-                  Develop email campaigns that nurture prospects and boost retention.
-                </p>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <UserGroupIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Virtual Assistance & Team Coordination</strong>
-                <p className="text-gray-200 text-base">
-                  Offer administrative support and seamless collaboration for your projects.
-                </p>
-              </div>
+            <li>
+              <strong>Performance & Security</strong><br />
+              Optimized loading, CI/CD pipelines, and enterprise‑grade security audits.
             </li>
           </ul>
         </div>
 
-        {/* Academic Research & Writing Services */}
-        <div>
+        {/* Branding & Digital Strategy */}
+        <div className="space-y-6">
           <img
-            src="/4.jpg"
-            alt="Consulting & Research"
-            className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
+            src="/8.jpg"
+            alt="Branding & Strategy"
+            className="w-full h-64 object-cover rounded-lg shadow-md"
           />
-          <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
-            Academic Research & Writing Services
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            Branding & Digital Strategy
           </h3>
-          <ul className="space-y-4">
-            <li className="flex items-start">
-              <BookOpenIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Essays, Reports, Case Studies</strong>
-                <p className="text-gray-200 text-base">
-                  Deliver well‑structured, plagiarism‑free papers tailored to your academic needs.
-                </p>
-              </div>
+          <ul className="list-disc list-inside space-y-4 text-gray-200">
+            <li>
+              <strong>Visual Identity & Logo Design</strong><br />
+              Cohesive brand systems that tell your unique story.
             </li>
-            <li className="flex items-start">
-              <AcademicCapIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Thesis & Dissertations</strong>
-                <p className="text-gray-200 text-base">
-                  Conduct in‑depth research, data analysis, and present polished dissertations that meet university standards.
-                </p>
-              </div>
+            <li>
+              <strong>UX/UI & Prototype Design</strong><br />
+              Intuitive interfaces backed by user research and testing.
             </li>
-            <li className="flex items-start">
-              <LibraryIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Literature Reviews</strong>
-                <p className="text-gray-200 text-base">
-                  Provide comprehensive literature surveys that inform your research direction.
-                </p>
-              </div>
+            <li>
+              <strong>AI‑Powered Market Insights</strong><br />
+              Data‑driven analysis, trend forecasting, and competitor mapping.
             </li>
-            <li className="flex items-start">
-              <DocumentTextIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Research Proposals</strong>
-                <p className="text-gray-200 text-base">
-                  Craft compelling proposals that secure approvals and funding for your projects.
-                </p>
-              </div>
+            <li>
+              <strong>e‑Commerce & Conversion Optimization</strong><br />
+              High‑impact funnels, payment integrations, and A/B testing.
             </li>
-            <li className="flex items-start">
-              <PencilAltIcon className="h-6 w-6 text-gray-200 mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <strong className="text-white text-lg">Editing & Proofreading</strong>
-                <p className="text-gray-200 text-base">
-                  Ensure clarity, proper formatting, and citation accuracy for all academic documents.
-                </p>
-              </div>
+            <li>
+              <strong>SEO & Content Strategy</strong><br />
+              Keyword research, on‑page SEO, and editorial planning that drives growth.
             </li>
           </ul>
-          <p className="text-gray-200 text-lg mt-6">
-            All customized, plagiarism-free, and backed by academic integrity.
-          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-      {/* Final Call-to-Action */}
-      <section className="bg-black py-16 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto text-center text-white">
-          <h2 className="text-3xl font-semibold mb-4">Ready to Elevate Your Brand or Academic Journey?</h2>
-          <p className="text-lg mb-6">
-            Whether you need a high‑impact marketing campaign, SEO‑rich content, or academic excellence, our team is here to help.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition duration-300"
-          >
-            Contact Us Today
-          </a>
-        </div>
-      </section>
     </div>
   );
 };

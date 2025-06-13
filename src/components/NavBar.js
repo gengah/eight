@@ -17,7 +17,7 @@ export default function NavBar() {
             activeClassName="text-black"
             className="inflex-flex items-center text-black hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
-            CleanWriters
+            Eight8
           </NavLink>
 
           {/* Mobile Hamburger Button */}
