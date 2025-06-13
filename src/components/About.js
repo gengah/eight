@@ -27,7 +27,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-8">
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-3xl font-bold mb-6">
               Digital Marketing, SEO Content & Academic Research
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -41,7 +41,7 @@ const About = () => {
             <img
               src="/7.jpg"
               alt="SEO & Marketing Illustration"
-              className="rounded-lg shadow-lg w-full object-cover"
+              className=" shadow-lg w-full object-cover"
             />
           </div>
         </div>
