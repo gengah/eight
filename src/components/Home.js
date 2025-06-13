@@ -261,7 +261,7 @@ export default function Home() {
                 “Eight8 transformed my  brand! It became beuatiful and appealing to our clients.”
               </p>
               <div className="flex items-center space-x-3">
-                <img src="/1.jpg" alt="Jane Doe" className="w-12 h-12 rounded-full object-cover" />
+                <img src="" alt="Jane Doe" className="w-12 h-12 rounded-full object-cover" />
                 <div>
                   <p className="font-semibold">Mary Zheng</p>
                   <p className="text-sm">Graduate Student, USA</p>
@@ -274,7 +274,7 @@ export default function Home() {
                 “SEO-driven articles from CleanWriters boosted our website traffic by 200% in just three months!”
               </p>
               <div className="flex items-center space-x-3">
-                <img src="/2.jpg" alt="Michael Smith" className="w-12 h-12 rounded-full object-cover" />
+                <img src="" alt="Michael Smith" className="w-12 h-12 rounded-full object-cover" />
                 <div>
                   <p className="font-semibold">Michael Nderitu</p>
                   <p className="text-sm">Marketing Manager, UK</p>
@@ -287,7 +287,7 @@ export default function Home() {
                 “Their virtual brand strategy service took our online presence from zero to hero. Highly recommend!”
               </p>
               <div className="flex items-center space-x-3">
-                <img src="/3.jpg" alt="Sara Lee" className="w-12 h-12 rounded-full object-cover" />
+                <img src="" alt="Sara Lee" className="w-12 h-12 rounded-full object-cover" />
                 <div>
                   <p className="font-semibold">Sara Khan</p>
                   <p className="text-sm">Startup Founder, Kenya</p>
