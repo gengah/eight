@@ -58,16 +58,15 @@ export default function Home() {
       We craft stunning websites and build iconic brand identities that capture attention, drive engagement, and fuel digital growth for businesses of all sizes.
     </p>
 
-    <div className="mt-8 flex flex-col sm:flex-row gap-4">
-      <a
-        href="#"
-        className={`px-6 py-3 text-lg font-medium border-2 border-green-500 bg-transparent text-blue-500 rounded-lg hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200 transform ${
-          loaded ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-6'
-        }`}
-      >
-        Request a Free Web Consultation
-      </a>
-    </div>
+   <a
+  href="mailto:eight83838@gmail.com?subject=Web%20Consultation%20Request&body=Hi,%20I'm%20interested%20in%20a%20free%20web%20consultation."
+  className={`px-6 py-3 text-lg font-medium border-2 border-green-500 bg-transparent text-blue-500 rounded-lg hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200 transform ${
+    loaded ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-6'
+  }`}
+>
+  Request a Free Web Consultation
+</a>
+
   </div>
 </section>
 
@@ -122,7 +121,7 @@ export default function Home() {
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-0">
       {/* Project 1 */}
-      <a href="https://peakfluence.co.ke" className="group block h-80 relative" aria-label="Project 1">
+      <a href="https://bestmart-two.vercel.app/" className="group block h-80 relative" aria-label="Project 1">
         <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
           <img
             src="/writing.jpg"
@@ -137,13 +136,14 @@ export default function Home() {
         </div>
       </a>
       {/* Project 2 */}
-      <a href="https://eight-blue.vercel.app" className="group block h-80 relative" aria-label="Project 2">
+      <a href="https://pridetok.com/" className="group block h-80 relative" aria-label="Project 2">
         <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
           <img
             src="/branding.jpg"
             alt="Project 2"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
+         
         </div>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 transition-all duration-300 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 rounded-none">
           <p className="text-white text-center">
@@ -152,7 +152,7 @@ export default function Home() {
         </div>
       </a>
       {/* Project 3 */}
-      <a href="https://https://pridetok.com/" className="group block h-80 relative" aria-label="Project 3">
+      <a href=" https://eight-blue.vercel.app" className="group block h-80 relative" aria-label="Project 3">
         <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
           <img
             src="/seo.jpg"
@@ -167,7 +167,7 @@ export default function Home() {
         </div>
       </a>
       {/* Project 4 */}
-      <a href="https://bestmart-two.vercel.app/" className="group block h-80 relative" aria-label="Project 4">
+      <a href="https://peakfluence.co.ke" className="group block h-80 relative" aria-label="Project 4">
         <div className="w-full h-full overflow-hidden rounded-none shadow-none border border-gray-200">
           <img
             src="/blog.jpg"
