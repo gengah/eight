@@ -98,7 +98,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-600 px-4 pb-4">
+        <div className="md:hidden bg-green-700 px-4 pb-4">
           <nav className="flex flex-col space-y-2">
             <NavLink
               to="/post"
