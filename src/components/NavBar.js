@@ -28,7 +28,7 @@ export default function NavBar() {
 >
   {menuOpen ? (
     <svg
-      className={`h-8 w-8 ${menuOpen ? "stroke-blue-600" : "stroke-white md:stroke-black"}`}
+      className={`h-8 w-8 ${menuOpen ? "stroke-green-600" : "stroke-white md:stroke-black"}`}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
